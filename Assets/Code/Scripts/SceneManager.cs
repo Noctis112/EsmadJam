@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
+
+
     public void GoToGameScene()
     {
         //SceneManager.LoadScene("Game"); // load the "Game" scene
@@ -15,9 +17,9 @@ public class SceneManager : MonoBehaviour
         //SceneManager.LoadScene("MainMenu"); // load the "MainMenu" scene
     }
 
-    public void GoToPauseMenuScene()
+    public void LeaveGame()
     {
-        //SceneManager.LoadScene("PauseMenu"); // load the "PauseMenu" scene
+        Application.Quit();
     }
 }
 
