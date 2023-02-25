@@ -59,7 +59,7 @@ public class InteractWithObject : MonoBehaviour
 
             if (interactionTimer >= interactionTime)
             {
-                Debug.Log("virus!");
+                GameManager.missions[1].currentCount++;
                 isInteracting = false;
                 interactionTimer = 0f;
             }
