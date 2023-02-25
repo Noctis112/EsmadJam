@@ -72,6 +72,7 @@ public class InteractWithObject : MonoBehaviour
                 slider.SetActive(false);
                 isInteracting = false;
                 interactionTimer = 0f;
+                Destroy(gameObject);
             }
             if (interactionTimer >= interactionTime && gameObject.tag == "Armario")
             {
