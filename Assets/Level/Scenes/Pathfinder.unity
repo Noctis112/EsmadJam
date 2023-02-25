@@ -134,9 +134,10 @@ GameObject:
   - component: {fileID: 124918943}
   - component: {fileID: 124918942}
   - component: {fileID: 124918941}
+  - component: {fileID: 124918944}
   m_Layer: 0
   m_Name: PointB2
-  m_TagString: Untagged
+  m_TagString: B2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,6 +207,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &124918944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124918940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &313956147
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,9 +231,10 @@ GameObject:
   - component: {fileID: 313956150}
   - component: {fileID: 313956149}
   - component: {fileID: 313956148}
+  - component: {fileID: 313956151}
   m_Layer: 0
   m_Name: PointB3
-  m_TagString: Untagged
+  m_TagString: B3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,6 +304,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &313956151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313956147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,9 +833,10 @@ GameObject:
   - component: {fileID: 1136524503}
   - component: {fileID: 1136524505}
   - component: {fileID: 1136524504}
+  - component: {fileID: 1136524506}
   m_Layer: 0
   m_Name: PointC
-  m_TagString: Untagged
+  m_TagString: DoorC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -877,6 +906,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136524502}
   m_Mesh: {fileID: -8923163199653617151, guid: 9a8b801cca68c144ab6defb0adfd5dfc, type: 3}
+--- !u!65 &1136524506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136524502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1161626848
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,9 +1010,10 @@ GameObject:
   - component: {fileID: 1347702395}
   - component: {fileID: 1347702397}
   - component: {fileID: 1347702396}
+  - component: {fileID: 1347702398}
   m_Layer: 0
   m_Name: PointA
-  m_TagString: Untagged
+  m_TagString: DoorA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1040,6 +1083,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347702394}
   m_Mesh: {fileID: -8923163199653617151, guid: 9a8b801cca68c144ab6defb0adfd5dfc, type: 3}
+--- !u!65 &1347702398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347702394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1860397811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,7 +1190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860397811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.64, y: 1.47, z: 2.92}
+  m_LocalPosition: {x: 11.85, y: 1.47, z: 2.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1172,8 +1228,8 @@ MonoBehaviour:
   DoorAPos: {fileID: 1347702394}
   DoorCPos: {fileID: 1136524502}
   agent: {fileID: 1860397818}
-  BossCooldownMax: 0
-  BossCooldownMin: 0
+  BossCooldownMax: 2
+  BossCooldownMin: 1
   PointBPosition:
   - {fileID: 2050942243}
   - {fileID: 124918943}
@@ -1211,9 +1267,10 @@ GameObject:
   - component: {fileID: 2050942243}
   - component: {fileID: 2050942242}
   - component: {fileID: 2050942241}
+  - component: {fileID: 2050942244}
   m_Layer: 0
   m_Name: PointB1
-  m_TagString: Untagged
+  m_TagString: B1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1283,6 +1340,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2050942244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050942240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &16936507385991152
 GameObject:
   m_ObjectHideFlags: 0
