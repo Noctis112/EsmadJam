@@ -1,49 +1,9 @@
 fileFormatVersion: 2
-guid: 247224cb213d6b14a99d00866d4ef5a0
+guid: 9ccb235fb79cd154088977c12c30dd6c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: AzulCadeira_MAT
-    second: {fileID: 2100000, guid: 4cb7461c520d05648b1ff079df09ac1a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BossCara_MAT
-    second: {fileID: 2100000, guid: d38069db06d210844ae26bebd345bc51, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CorPele_MAT
-    second: {fileID: 2100000, guid: 310d1615bbfdc9640be991d602d9f1dc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PapelBranco_MAT
-    second: {fileID: 2100000, guid: f16917f3ed9b7704383582fefb9ff454, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PretoNormal_MAT
-    second: {fileID: 2100000, guid: 14e522ace839f9c40b6dfb7f4dfaa5c8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VermelhoNormal_MAT
-    second: {fileID: 2100000, guid: 716e4123e2164724588c53448f41f2fc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: b65c31078bfb47d4685b2a75adf49bb2, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: BossCara
-    second: {fileID: 2800000, guid: f3655feb8619e544b82f73889ca983cf, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
