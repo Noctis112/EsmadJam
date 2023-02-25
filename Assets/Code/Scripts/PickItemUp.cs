@@ -4,13 +4,16 @@ using UnityEngine.InputSystem;
 public class PickItemUp : MonoBehaviour
 {
     public InputActionReference pickupAction;
+
     public float pickupDistance = 2.0f;
 
     private GameObject heldItem = null;
 
+    [SerializeField] GameObject targetPosition;
     [SerializeField] GameObject playerCam;
     [SerializeField] bool drawRaycast = true;
-    
+
+
     private void OnEnable()
     {
         // Enable the input action when the script is enabled
@@ -29,13 +32,18 @@ public class PickItemUp : MonoBehaviour
         pickupAction.action.performed -= OnPickupAction;
     }
 
+   
+
     private void OnPickupAction(InputAction.CallbackContext context)
     {
+        Vector3 direction = targetPosition.transform.position - playerCam.transform.position;
+
         if (heldItem == null)
         {
+
             // Try to pick up an item
             RaycastHit hit;
-            if (Physics.Raycast(playerCam.transform.position, transform.forward, out hit, pickupDistance))
+            if (Physics.Raycast(playerCam.transform.position, direction, out hit, pickupDistance))
             {
                 if (hit.collider.CompareTag("Pickup"))
                 {
@@ -55,13 +63,5 @@ public class PickItemUp : MonoBehaviour
             heldItem = null;
         }
 
-    }
-
-    void Update()
-    {
-        if (drawRaycast)
-        {
-            Debug.DrawRay(playerCam.transform.position, transform.forward * pickupDistance, Color.green);
-        }
     }
 }
