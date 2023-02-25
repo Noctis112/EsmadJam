@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneManagerManager : MonoBehaviour
 {
-
-
     public void GoToGameScene()
     {
-        //SceneManager.LoadScene("Game"); // load the "Game" scene
+        SceneManager.LoadScene("Game"); // load the "Game" scene
     }
 
     public void GoToMainMenuScene()
     {
-        //SceneManager.LoadScene("MainMenu"); // load the "MainMenu" scene
+        SceneManager.LoadScene("MainMenu"); // load the "MainMenu" scene
     }
 
     public void LeaveGame()
