@@ -1,10 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class InteractWithObject : MonoBehaviour
 {
     public InputActionReference pickupAction;
-    [SerializeField] private GameObject interactObject;
     [SerializeField] private Collider interactZone;
     [SerializeField] private float interactionTime = 2f;
 
@@ -12,6 +14,8 @@ public class InteractWithObject : MonoBehaviour
     private bool isInteracting = false;
     private float interactionTimer = 0f;
 
+    [SerializeField] private Slider interactionSlider; // Reference to the UI slider for the interaction progress
+    [SerializeField] GameObject slider;
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -42,7 +46,6 @@ public class InteractWithObject : MonoBehaviour
             isInteracting = true;
             interactionTimer = 0f;
         }
-
         // If the interaction button is released, reset the interaction
         pickupAction.action.canceled +=
             ctx =>
@@ -50,16 +53,20 @@ public class InteractWithObject : MonoBehaviour
                 Debug.Log("Cancelado");
                 isInteracting = false;
                 interactionTimer = 0f;
+                slider.SetActive(false);
             };
 
         // Perform the interaction while the button is held down and the player is inside the interact zone
         if (isInteracting && canInteract)
         {
             interactionTimer += Time.deltaTime;
+            slider.SetActive(true);
+            interactionSlider.value = interactionTimer / interactionTime;
 
             if (interactionTimer >= interactionTime)
             {
                 GameManager.missions[1].currentCount++;
+                slider.SetActive(false);
                 isInteracting = false;
                 interactionTimer = 0f;
             }
