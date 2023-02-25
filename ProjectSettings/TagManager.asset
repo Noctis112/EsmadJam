@@ -12,6 +12,7 @@ TagManager:
   - B3
   - DoorA
   - DoorC
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Water
   - UI
   - NoBoss
-  - 
+  - BossPath
   - 
   - 
   - 

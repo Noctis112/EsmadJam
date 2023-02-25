@@ -1,5 +1,9 @@
 public static class GameManager
 {
+    public static int playerLifes = 3;
+
+    public static int gameScore = 0; // Score from 0 to 1000
+
     public static Mission[] missions = new Mission[]
     {
         new Mission("Destruir 10 dossies", 10),
