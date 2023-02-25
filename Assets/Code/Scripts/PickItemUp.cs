@@ -29,7 +29,7 @@ public class PickItemUp : MonoBehaviour
         pickupAction.action.performed -= OnPickupAction;
     }
 
-   
+
 
     private void OnPickupAction(InputAction.CallbackContext context)
     {
@@ -46,7 +46,7 @@ public class PickItemUp : MonoBehaviour
                     // Pick up the item
                     heldItem = hit.collider.gameObject;
                     heldItem.transform.parent = transform;
-                    heldItem.transform.localPosition = new Vector3(0.0f, 0.8f, pickupDistance);
+                    heldItem.transform.localPosition = new Vector3(0.0f, 0.8f, 1);
                     heldItem.GetComponent<Rigidbody>().isKinematic = true;
                 }
             }

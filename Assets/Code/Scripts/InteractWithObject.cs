@@ -16,6 +16,9 @@ public class InteractWithObject : MonoBehaviour
 
     [SerializeField] private Slider interactionSlider; // Reference to the UI slider for the interaction progress
     [SerializeField] GameObject slider;
+    [SerializeField] Animator portaEsq;
+    [SerializeField] Animator portaDir;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -63,11 +66,18 @@ public class InteractWithObject : MonoBehaviour
             slider.SetActive(true);
             interactionSlider.value = interactionTimer / interactionTime;
 
-            if (interactionTimer >= interactionTime)
+            if (interactionTimer >= interactionTime && gameObject.tag == "PC")
             {
                 GameManager.missions[1].currentCount++;
                 slider.SetActive(false);
                 isInteracting = false;
+                interactionTimer = 0f;
+            }
+            if (interactionTimer >= interactionTime && gameObject.tag == "Armario")
+            {
+                slider.SetActive(false);
+                portaDir.SetBool("Open", true);
+                portaEsq.SetBool("Open", true);
                 interactionTimer = 0f;
             }
         }
