@@ -80,6 +80,7 @@ public class InteractWithObject : MonoBehaviour
                 portaDir.SetBool("Open", true);
                 portaEsq.SetBool("Open", true);
                 interactionTimer = 0f;
+                Destroy(gameObject);
             }
         }
     }
