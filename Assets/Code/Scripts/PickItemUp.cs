@@ -37,7 +37,6 @@ public class PickItemUp : MonoBehaviour
 
         if (heldItem == null)
         {
-
             // Try to pick up an item
             RaycastHit hit;
             if (Physics.Raycast(playerCam.transform.position, direction, out hit, pickupDistance))
