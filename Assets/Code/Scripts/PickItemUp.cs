@@ -8,6 +8,9 @@ public class PickItemUp : MonoBehaviour
 
     private GameObject heldItem = null;
 
+    [SerializeField] GameObject playerCam;
+    [SerializeField] bool drawRaycast = true;
+    
     private void OnEnable()
     {
         // Enable the input action when the script is enabled
@@ -32,14 +35,14 @@ public class PickItemUp : MonoBehaviour
         {
             // Try to pick up an item
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, pickupDistance))
+            if (Physics.Raycast(playerCam.transform.position, transform.forward, out hit, pickupDistance))
             {
                 if (hit.collider.CompareTag("Pickup"))
                 {
                     // Pick up the item
                     heldItem = hit.collider.gameObject;
                     heldItem.transform.parent = transform;
-                    heldItem.transform.localPosition = new Vector3(0.0f, 0.5f, pickupDistance);
+                    heldItem.transform.localPosition = new Vector3(0.0f, 0.8f, pickupDistance);
                     heldItem.GetComponent<Rigidbody>().isKinematic = true;
                 }
             }
@@ -50,6 +53,15 @@ public class PickItemUp : MonoBehaviour
             heldItem.transform.parent = null;
             heldItem.GetComponent<Rigidbody>().isKinematic = false;
             heldItem = null;
+        }
+
+    }
+
+    void Update()
+    {
+        if (drawRaycast)
+        {
+            Debug.DrawRay(playerCam.transform.position, transform.forward * pickupDistance, Color.green);
         }
     }
 }
