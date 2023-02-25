@@ -11,9 +11,6 @@ public class PickItemUp : MonoBehaviour
 
     [SerializeField] GameObject targetPosition;
     [SerializeField] GameObject playerCam;
-    [SerializeField] bool drawRaycast = true;
-
-
     private void OnEnable()
     {
         // Enable the input action when the script is enabled
@@ -62,6 +59,5 @@ public class PickItemUp : MonoBehaviour
             heldItem.GetComponent<Rigidbody>().isKinematic = false;
             heldItem = null;
         }
-
     }
 }
