@@ -10,18 +10,67 @@ public class BossPlayerController : MonoBehaviour
 
     [SerializeField] NavMeshAgent agent;
 
-    // Start is called before the first frame update
+    [SerializeField] float BossCooldownMax;
+    [SerializeField] float BossCooldownMin;
+
+    [SerializeField] Transform[] PointBPosition;
+    private int PointBIndex;
+
+    private string BossState = "PointA"; //PointA => WalkingToB ==> WalkingToC ==> PointC
+    private bool SwitchPointB;
+
+    private bool BossLeave = false;
+
+    private float timeRemaining;
+    private bool timerIsRunning;
+
     void Start()
     {
+        ResetBossTimer();
 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        // BOSS TIMER //
+
+        if (Input.GetMouseButtonDown(0))
         {
-            agent.SetDestination(DoorCPos.transform.position);
+            timerIsRunning = true;
         }
+
+        if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                Debug.Log(timeRemaining);
+            }
+            else
+            {
+                Debug.Log("Time has run out!");
+                timeRemaining = 10f;
+                timerIsRunning = false;
+                BossState = "WalkingToB";
+
+                PointBIndex = Random.Range(0, PointBPosition.Length);
+
+                Debug.Log(PointBPosition);
+            }
+        }
+
+        // BOSS SET DESTINATION //
+
+        if (BossState == "WalkingToB")
+        {
+            agent.SetDestination(PointBPosition[PointBIndex].position);
+        }
+    }
+
+
+    private void ResetBossTimer() // reset timmer when boss arrives at point A or B
+    {
+        timeRemaining = Random.Range(BossCooldownMin, BossCooldownMax);
+        timerIsRunning = true;
     }
 }
