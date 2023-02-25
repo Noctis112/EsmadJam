@@ -1,0 +1,441 @@
+fileFormatVersion: 2
+guid: 400fdc11e675d694e9cf0a9de388a657
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AmareloEsponja_MAT
+    second: {fileID: 2100000, guid: 7215165e32d8284408de5e2d37779ddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AzulBebe_MAT
+    second: {fileID: 2100000, guid: da2e89c2845881949b40b4ae8918126d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AzulCadeira_MAT
+    second: {fileID: 2100000, guid: d6462ed4214e7d143aacbed426e614da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AzulEscuro_MAT
+    second: {fileID: 2100000, guid: 60fb20c4a8eec7248ad1e0ce044863aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BorderColliePortrait_MAT
+    second: {fileID: 2100000, guid: b45036bf8a9de6144a050d6c1e56cd49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cacifos_MAT
+    second: {fileID: 2100000, guid: 0d063044db185344e975a1d42e928800, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CaixaCastanha_MAT
+    second: {fileID: 2100000, guid: a22918c295f3a37499c3423365a41856, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CaixotesLixo_MAT
+    second: {fileID: 2100000, guid: 73fbe73230a7e8144bbe35493b8b84f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CanonLOGO_MAT
+    second: {fileID: 2100000, guid: 872313e68fff09947b9e7f86656810fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CastanhoEscuro_MAT
+    second: {fileID: 2100000, guid: 3952e6ba1388e0f4396375421112b3d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CastanhoMadeira_MAT
+    second: {fileID: 2100000, guid: c6dc4d477a172c346b69be707550f782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chao_MAT
+    second: {fileID: 2100000, guid: 812a04a49afe1fa4db3c66494a2e8be3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzaClaro_MAT
+    second: {fileID: 2100000, guid: 46b103f679de1294489200429b3da6f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzentoCadeira_MAT
+    second: {fileID: 2100000, guid: 5a08c1a6f76968f4f882aa9cdf125dfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzentoTeclado_MAT
+    second: {fileID: 2100000, guid: d0e215fa904c8f14f97f9e4a7b8a2967, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ComputadorPreto_MAT
+    second: {fileID: 2100000, guid: 64f43621221ea864986f23072a6c6696, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CorPele2_MAT
+    second: {fileID: 2100000, guid: d77d490080c36d14098b5156e41d4821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CorPele_MAT
+    second: {fileID: 2100000, guid: 10c3ca2b214f90a44acbeb42d10796a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CubiculosBeje_MAT
+    second: {fileID: 2100000, guid: 068c2ec3862c8fd4ab89529aae0878d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EcraCompiutador7_MAT
+    second: {fileID: 2100000, guid: 24c1bec85c1541949830518445c8f787, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EcraComputador2_MAT
+    second: {fileID: 2100000, guid: 446a12d7738873b4c8e788533be8ef5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EcraComputador3_MAT
+    second: {fileID: 2100000, guid: 9a9cd40c4263ec84e9912bc7a99a2463, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EcraComputador4_MAT
+    second: {fileID: 2100000, guid: 63239ddee93219749abd520d8510a8b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EcraComputador5
+    second: {fileID: 2100000, guid: 3168a330afbfee848a12fd3a3bd013c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EcraComputador6_MAT
+    second: {fileID: 2100000, guid: 19722290ce046e3478478ab74be2b41c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EcraComputador_MAT
+    second: {fileID: 2100000, guid: 19f0b9ff856c92a4f98f908915226092, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EletricoSinal_MAT
+    second: {fileID: 2100000, guid: 15a197f3c94591e4c9dad9378dd26282, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jornal_MAT
+    second: {fileID: 2100000, guid: 669f34f6c0b699847bab40310a7547b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LaranjaClaro_MAT
+    second: {fileID: 2100000, guid: 447d212b0fbf7c14db293faa6588d1c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LaranjaPeixinho_MAT
+    second: {fileID: 2100000, guid: a9b89f52b525625409f15a2331142992, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LivroLaranja_MAT
+    second: {fileID: 2100000, guid: 8ddac15f27f8bdd45847764213a1d8fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LoveLetter_MAT
+    second: {fileID: 2100000, guid: ad5ae62790fd86f4d8cf47ee30488855, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MadeiraMesa_MAT
+    second: {fileID: 2100000, guid: 98cafa2759c59694e9d4eaa653092f34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NPC1Cara_MAT
+    second: {fileID: 2100000, guid: 91b7471ea8837b84d8b728335b7e538b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NPC2Cara_MAT
+    second: {fileID: 2100000, guid: cda2a56a24e015e4cbb9dc28595becb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapelBranco_MAT
+    second: {fileID: 2100000, guid: 6aee762cf65312b4dade6f9506c60d1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapelaMao_MAT
+    second: {fileID: 2100000, guid: 04b0c6ae8de82ef4bbc1c6162967ac94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paredes_MAT
+    second: {fileID: 2100000, guid: 7dc1a975116da7143bd7eba6d5e806e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PastorAlemaoPortrait_MAT
+    second: {fileID: 2100000, guid: 0870227ebf49b9843a30ee8034906449, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portrait2_MAT
+    second: {fileID: 2100000, guid: 425c56a0a4d68a54896e0ae1b5c070e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PortraitCao_MAT
+    second: {fileID: 2100000, guid: 40d8c5f250c6f4840bda024ab1c09d77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PostItAMarelo_MAT
+    second: {fileID: 2100000, guid: ab4f07d9e9c37fd44a01c78e2dc4eda7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster2_MAT
+    second: {fileID: 2100000, guid: d0a15d38fd095ee4aba64e8af1594d3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster3_MAT
+    second: {fileID: 2100000, guid: 0aeddf7ec9d585c44adbf67619982745, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoBrilhante
+    second: {fileID: 2100000, guid: cc3899405c5eab5439669bf524b0e4be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoNormal_MAT
+    second: {fileID: 2100000, guid: 37ae710ba84e06f4582a0dc3f62900c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quadro1_MAT
+    second: {fileID: 2100000, guid: c6cc56bace994fc44990d550bef0a0ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RosaBebe_MAT
+    second: {fileID: 2100000, guid: f8d675b1d4cffb94b9d75e0a8ad64a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RosaPano_MAT
+    second: {fileID: 2100000, guid: 3ae0d11eaf67f044a918aed3ebe817e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RoxoVeneno
+    second: {fileID: 2100000, guid: 7f56924d5afc199439c82fb9d11e237f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scribble2_MAT
+    second: {fileID: 2100000, guid: 4934ef4e0ec5c814c884fb1b67d9bbfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scribble4_MAT
+    second: {fileID: 2100000, guid: e09679a0bf458974a9d8d9a0ca63327c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScribbleCao_MAT
+    second: {fileID: 2100000, guid: b6f1d6640e6beba488a0562bfe84b724, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScribbleCaozinho2_MAT
+    second: {fileID: 2100000, guid: 4b67131fda06652418026737daf4878a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScribbleEstatistica_MAT
+    second: {fileID: 2100000, guid: 1202692615a149844aacfdb5bdfb15ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScribbleMatematica_MAT
+    second: {fileID: 2100000, guid: 4496c4994a832b1428d16a7504a3bc8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScribblePepe_MAT
+    second: {fileID: 2100000, guid: 91490ad2551eb6249b522160b44a579f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScribbleTexto2_MAT
+    second: {fileID: 2100000, guid: b078aa5d92f953e42b3f779ad3db5604, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Scribles1_MAT
+    second: {fileID: 2100000, guid: f8c55b30484a19745adccc6a4d3c8099, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SinalVeneno
+    second: {fileID: 2100000, guid: 2d8d6672d1377db45a9ac4a9dc3d1069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VerdeDossie_MAT
+    second: {fileID: 2100000, guid: 8e82415570e05c74f982e25e414d747a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VerdeGarrafa_MAT
+    second: {fileID: 2100000, guid: 57f83b98f4b5a6746a7736b66967299e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VerdeLima_MAT
+    second: {fileID: 2100000, guid: 6e134bc2b439ef147ba7a95f5418ada9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VermelhoBrilhante_MAT
+    second: {fileID: 2100000, guid: 7149482f42496f5448ab5ea460724833, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VermelhoNormal_MAT
+    second: {fileID: 2100000, guid: 2c289c5364e35b243b392ff5e73768a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VermelhoTampinhas_MAT
+    second: {fileID: 2100000, guid: 12828724a79b99540b3880c68af048ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 5f5f993d75978744ca5a4a0125b7f563, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
