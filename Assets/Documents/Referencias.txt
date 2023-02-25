@@ -1,2 +1,11 @@
 
-Musica elevator: https://www.youtube.com/watch?v=xy_NKN75Jhw&t=1s
+Musica:
+Elevator-Music: https://www.youtube.com/watch?v=xy_NKN75Jhw&t=1s
+
+
+____________________________________________________________________________________________
+
+Assets:
+
+City 3D: https://assetstore.unity.com/packages/3d/environments/urban/city-voxel-pack-136141
+Nav-Mesh:https://github.com/Unity-Technologies/NavMeshComponents#documentation-draft
