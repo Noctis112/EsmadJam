@@ -8,6 +8,7 @@ public class Dossier : MonoBehaviour
     {
         if(collision.gameObject.tag == "Impressora")
         {
+            GameManager.missions[0].currentCount++;
             Destroy(gameObject);
         }
     }
