@@ -9,6 +9,7 @@ public class InteractWithObject : MonoBehaviour
     public InputActionReference pickupAction;
     [SerializeField] private Collider interactZone;
     [SerializeField] private float interactionTime = 2f;
+    [SerializeField] GameObject interactableObject;
 
     private bool canInteract = false;
     private bool isInteracting = false;
@@ -72,6 +73,7 @@ public class InteractWithObject : MonoBehaviour
                 slider.SetActive(false);
                 isInteracting = false;
                 interactionTimer = 0f;
+                interactableObject.GetComponent<Hacked>().GetHacked();
                 Destroy(gameObject);
             }
             if (interactionTimer >= interactionTime && gameObject.tag == "Armario")
