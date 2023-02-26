@@ -8,6 +8,11 @@ public class SafeZone : MonoBehaviour
     bool playerOn = false;
     bool bossOn = false;
 
+    [SerializeField] GameObject cameraAtual;
+    [SerializeField] GameObject cameraCutscene;
+    //[SerializeField] GameObject fakePlayer;
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject teleportStart;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -42,8 +47,23 @@ public class SafeZone : MonoBehaviour
         if (!playerOn && bossOn)
         {
             GameManager.playerLifes--;
-            //Cutscene code
+            StartCoroutine(CutsceneNoPlayer(5f));
         }
     }
 
+
+    IEnumerator CutsceneNoPlayer(float cutsceneTime)
+    {
+        cameraAtual.SetActive(false);
+        //fakePlayer.SetActive(false);
+        cameraCutscene.SetActive(true);
+        player.GetComponent<Rigidbody>().
+        player.transform.position = teleportStart.transform.position;
+        player.transform.rotation = teleportStart.transform.rotation;
+        yield return new WaitForSeconds(cutsceneTime);
+
+        cameraAtual.SetActive(true);
+        cameraCutscene.SetActive(false);
+        //fakePlayer.SetActive(true);
+    }
 }
