@@ -10,6 +10,9 @@ public class InteractWithObject : MonoBehaviour
     [SerializeField] private Collider interactZone;
     [SerializeField] private float interactionTime = 2f;
     [SerializeField] GameObject interactableObject;
+    [SerializeField] GameObject buttScanPage;
+    [SerializeField] GameObject eletricidadeColider;
+    [SerializeField] GameObject lights;
 
     private bool canInteract = false;
     private bool isInteracting = false;
@@ -20,6 +23,7 @@ public class InteractWithObject : MonoBehaviour
     [SerializeField] Animator portaEsq;
     [SerializeField] Animator portaDir;
     [SerializeField] Animator portaEletricidade;
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -89,7 +93,23 @@ public class InteractWithObject : MonoBehaviour
             {
                 slider.SetActive(false);
                 portaEletricidade.SetBool("Activate", true);
+                eletricidadeColider.SetActive(true);
                 interactionTimer = 0f;
+            }
+            if (interactionTimer >= interactionTime && gameObject.tag == "Buttscan")
+            {
+                slider.SetActive(false);
+                buttScanPage.SetActive(true);
+                interactionTimer = 0f;
+                Destroy(interactZone.gameObject);
+            }
+            if (interactionTimer >= interactionTime && gameObject.tag == "CortarCabo")
+            {
+                lights.SetActive(false);
+                slider.SetActive(false);
+                interactionTimer = 0f;
+                Destroy(interactZone.gameObject);
+                GameManager.missions[3].currentCount++;
             }
         }
     }

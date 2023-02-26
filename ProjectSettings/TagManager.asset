@@ -18,6 +18,9 @@ TagManager:
   - Aquario
   - SafeZone
   - Eletricidade
+  - Buttscan
+  - BossDoor
+  - CortarCabo
   layers:
   - Default
   - TransparentFX
