@@ -20,8 +20,6 @@ public class InteractWithObject : MonoBehaviour
     [SerializeField] Animator portaEsq;
     [SerializeField] Animator portaDir;
 
-    [SerializeField] Animator PortaEnergiaAnim;
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -83,13 +81,6 @@ public class InteractWithObject : MonoBehaviour
                 slider.SetActive(false);
                 portaDir.SetBool("Open", true);
                 portaEsq.SetBool("Open", true);
-                interactionTimer = 0f;
-                Destroy(gameObject);
-            }
-            if (interactionTimer >= interactionTime && gameObject.tag == "armarioEletrico")
-            {
-                slider.SetActive(false);
-                PortaEnergiaAnim.SetBool("Activate", true);
                 interactionTimer = 0f;
                 Destroy(gameObject);
             }

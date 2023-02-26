@@ -17,7 +17,6 @@ TagManager:
   - PC
   - Aquario
   - SafeZone
-  - armarioEletrico
   layers:
   - Default
   - TransparentFX
