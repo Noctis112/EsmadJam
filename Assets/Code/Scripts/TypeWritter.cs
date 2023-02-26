@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.UI;
 using TMPro;
 
 public class TypeWritter : MonoBehaviour
@@ -13,7 +12,7 @@ public class TypeWritter : MonoBehaviour
     [SerializeField] float typingSpeed = 0.05f;
 
     // The text to display with the typewriter effect
-     string displayText;
+    string displayText;
 
     // The coroutine that handles the typewriter effect
     private Coroutine typingCoroutine;

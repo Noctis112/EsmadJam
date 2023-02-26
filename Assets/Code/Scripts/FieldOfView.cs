@@ -16,6 +16,8 @@ public class FieldOfView : MonoBehaviour
 
     public bool canSeePlayer;
 
+    private bool PlayerSeen = false;
+
     [SerializeField] float cutsceneTimer;
     [SerializeField] GameObject cameraAtual;
     [SerializeField] GameObject cameraCutscene;
@@ -70,11 +72,15 @@ public class FieldOfView : MonoBehaviour
 
     private void Update()
     {
-        if (canSeePlayer && !safezone.GetComponent<SafeZone>().playerOn)
+        if (canSeePlayer && !safezone.GetComponent<SafeZone>().playerOn && !PlayerSeen)
         {
-            GameManager.playerLifes--;
+
+            StartCoroutine(BossDamage());
+
+
             StartCoroutine(CutscenePlayer(cutsceneTimer));
         }
+
     }
 
     IEnumerator CutscenePlayer(float cutsceneTime)
@@ -94,5 +100,21 @@ public class FieldOfView : MonoBehaviour
         cameraCutscene.SetActive(false);
         fakeBoss.SetBool("PlayerOn", false);
         fakePlayer.SetActive(false);
+    }
+
+
+    IEnumerator BossDamage()
+    {
+        PlayerSeen = true;
+
+        GameManager.playerLifes--;
+        GameManager.gameScore -= 100;
+        Debug.Log("VEr");
+
+
+        yield return new WaitForSeconds(10);
+
+
+        PlayerSeen = false;
     }
 }

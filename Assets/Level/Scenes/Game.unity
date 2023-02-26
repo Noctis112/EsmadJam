@@ -36435,6 +36435,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789247744}
   m_Mesh: {fileID: 846890626164944574, guid: 400fdc11e675d694e9cf0a9de388a657, type: 3}
+--- !u!1 &1796344103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796344105}
+  - component: {fileID: 1796344104}
+  m_Layer: 0
+  m_Name: GameScenemNagaer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1796344104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796344103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a5d415929ba7145bd8ceb3865c1663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1796344105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796344103}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1800211609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51071,7 +51115,6 @@ GameObject:
   - component: {fileID: 6886507321900115652}
   - component: {fileID: 5646047136248925511}
   - component: {fileID: 5992573853488125064}
-  - component: {fileID: 6886507321900115653}
   m_Layer: 0
   m_Name: PortaSaida
   m_TagString: Untagged
@@ -58523,7 +58566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -7, y: 0}
+  m_AnchoredPosition: {x: -6.9999695, y: 0}
   m_SizeDelta: {x: -24, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4159127477241096240
@@ -58622,7 +58665,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 160, y: 20}
+  m_SizeDelta: {x: 263.3, y: 31.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4159127477320718437
 MonoBehaviour:
@@ -58691,7 +58734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4159127477371456712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58764,7 +58807,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 7.500001, y: 0}
   m_SizeDelta: {x: 24.999998, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -67112,7 +67155,6 @@ GameObject:
   - component: {fileID: 3773498419093912991}
   - component: {fileID: 7099695767859166265}
   - component: {fileID: 1323150521628318185}
-  - component: {fileID: 7099695767859166266}
   m_Layer: 6
   m_Name: PortaSaida1
   m_TagString: Untagged
@@ -68539,20 +68581,6 @@ Transform:
   m_Father: {fileID: 765458936}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &6886507321900115653
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946439807421215277}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3468216427227503769, guid: 400fdc11e675d694e9cf0a9de388a657, type: 3}
 --- !u!1 &6891754828645176185
 GameObject:
   m_ObjectHideFlags: 0
@@ -69486,20 +69514,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6610367460367018134}
-  m_Mesh: {fileID: -2324623330613418264, guid: 400fdc11e675d694e9cf0a9de388a657, type: 3}
---- !u!64 &7099695767859166266
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6610367460367018134}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: -2324623330613418264, guid: 400fdc11e675d694e9cf0a9de388a657, type: 3}
 --- !u!33 &7116184556463941889
 MeshFilter:

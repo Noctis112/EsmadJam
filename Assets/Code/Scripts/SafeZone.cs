@@ -8,6 +8,8 @@ public class SafeZone : MonoBehaviour
     public bool playerOn = false;
     bool bossOn = false;
 
+    bool PlayerSeen;
+
     [SerializeField] float cutsceneTimer;
     [SerializeField] GameObject cameraAtual;
     [SerializeField] GameObject cameraCutscene;
@@ -47,9 +49,9 @@ public class SafeZone : MonoBehaviour
         {
             return;
         }
-        if (!playerOn && bossOn)
+        if (!playerOn && bossOn && !PlayerSeen)
         {
-            GameManager.playerLifes--;
+            StartCoroutine(BossDamage());
             StartCoroutine(CutsceneNoPlayer(cutsceneTimer));
         }
     }
@@ -72,5 +74,18 @@ public class SafeZone : MonoBehaviour
         cameraCutscene.SetActive(false);
         fakeBoss.SetBool("PlayerOff", false);
         fakePlayer.SetActive(true);
+    }
+
+    IEnumerator BossDamage()
+    {
+        PlayerSeen = true;
+
+        GameManager.playerLifes--;
+        GameManager.gameScore -= 100;
+        Debug.Log("safeZone");
+        yield return new WaitForSeconds(10);
+
+
+        PlayerSeen = false;
     }
 }

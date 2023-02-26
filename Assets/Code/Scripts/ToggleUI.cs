@@ -14,11 +14,14 @@ public class ToggleUI : MonoBehaviour
 
     bool[] LinesOn;
 
+    bool[] GameScorePoints;
+
     public InputActionReference UIToggle;
 
     private void Start()
     {
         LinesOn = new bool[Lines.Length];
+        GameScorePoints = new bool[Lines.Length];
     }
 
     void Update()
@@ -79,6 +82,7 @@ public class ToggleUI : MonoBehaviour
             if (GameManager.missions[i].currentCount == GameManager.missions[i].requiredCount)
             {
                 LinesOn[i] = true;
+
             }
         }
     }
