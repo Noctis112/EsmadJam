@@ -8,11 +8,14 @@ public class SafeZone : MonoBehaviour
     bool playerOn = false;
     bool bossOn = false;
 
+    [SerializeField] float cutsceneTimer;
     [SerializeField] GameObject cameraAtual;
     [SerializeField] GameObject cameraCutscene;
     //[SerializeField] GameObject fakePlayer;
     [SerializeField] GameObject player;
     [SerializeField] GameObject teleportStart;
+    [SerializeField] Animator fakeBoss;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -47,7 +50,7 @@ public class SafeZone : MonoBehaviour
         if (!playerOn && bossOn)
         {
             GameManager.playerLifes--;
-            StartCoroutine(CutsceneNoPlayer(5f));
+            StartCoroutine(CutsceneNoPlayer(cutsceneTimer));
         }
     }
 
@@ -57,13 +60,17 @@ public class SafeZone : MonoBehaviour
         cameraAtual.SetActive(false);
         //fakePlayer.SetActive(false);
         cameraCutscene.SetActive(true);
-        player.GetComponent<Rigidbody>().
+        player.GetComponent<CharacterController>().enabled = false;
         player.transform.position = teleportStart.transform.position;
         player.transform.rotation = teleportStart.transform.rotation;
+        fakeBoss.SetBool("PlayerOff", true);
+
         yield return new WaitForSeconds(cutsceneTime);
 
+        player.GetComponent<CharacterController>().enabled = true;
         cameraAtual.SetActive(true);
         cameraCutscene.SetActive(false);
+        fakeBoss.SetBool("PlayerOff", false);
         //fakePlayer.SetActive(true);
     }
 }
