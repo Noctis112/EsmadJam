@@ -15,7 +15,6 @@ public class KillMemo : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
 
         if (other.gameObject.tag == "Aquario")
         {

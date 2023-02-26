@@ -19,6 +19,7 @@ public class InteractWithObject : MonoBehaviour
     [SerializeField] GameObject slider;
     [SerializeField] Animator portaEsq;
     [SerializeField] Animator portaDir;
+    [SerializeField] Animator portaEletricidade;
 
     void OnTriggerEnter(Collider other)
     {
@@ -83,6 +84,12 @@ public class InteractWithObject : MonoBehaviour
                 portaEsq.SetBool("Open", true);
                 interactionTimer = 0f;
                 Destroy(gameObject);
+            }
+            if (interactionTimer >= interactionTime && gameObject.tag == "Eletricidade")
+            {
+                slider.SetActive(false);
+                portaEletricidade.SetBool("Activate", true);
+                interactionTimer = 0f;
             }
         }
     }
