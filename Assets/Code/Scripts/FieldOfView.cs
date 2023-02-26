@@ -16,6 +16,14 @@ public class FieldOfView : MonoBehaviour
 
     public bool canSeePlayer;
 
+    [SerializeField] float cutsceneTimer;
+    [SerializeField] GameObject cameraAtual;
+    [SerializeField] GameObject cameraCutscene;
+    [SerializeField] GameObject fakePlayer;
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject teleportStart;
+    [SerializeField] Animator fakeBoss;
+
     private void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
@@ -47,7 +55,9 @@ public class FieldOfView : MonoBehaviour
                 float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
+                {
                     canSeePlayer = true;
+                }
                 else
                     canSeePlayer = false;
             }
@@ -62,8 +72,28 @@ public class FieldOfView : MonoBehaviour
     {
         if (canSeePlayer)
         {
+            Debug.Log("haha vi-te");
             GameManager.playerLifes--;
-            //Cutscene
+            StartCoroutine(CutscenePlayer(cutsceneTimer));
         }
+    }
+
+    IEnumerator CutscenePlayer(float cutsceneTime)
+    {
+        cameraAtual.SetActive(false);
+        fakePlayer.SetActive(true);
+        cameraCutscene.SetActive(true);
+        player.GetComponent<CharacterController>().enabled = false;
+        player.transform.position = teleportStart.transform.position;
+        player.transform.rotation = teleportStart.transform.rotation;
+        fakeBoss.SetBool("PlayerOn", true);
+
+        yield return new WaitForSeconds(cutsceneTime);
+
+        player.GetComponent<CharacterController>().enabled = true;
+        cameraAtual.SetActive(true);
+        cameraCutscene.SetActive(false);
+        fakeBoss.SetBool("PlayerOn", false);
+        fakePlayer.SetActive(false);
     }
 }

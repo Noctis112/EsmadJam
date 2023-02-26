@@ -11,7 +11,7 @@ public class SafeZone : MonoBehaviour
     [SerializeField] float cutsceneTimer;
     [SerializeField] GameObject cameraAtual;
     [SerializeField] GameObject cameraCutscene;
-    //[SerializeField] GameObject fakePlayer;
+    [SerializeField] GameObject fakePlayer;
     [SerializeField] GameObject player;
     [SerializeField] GameObject teleportStart;
     [SerializeField] Animator fakeBoss;
@@ -58,7 +58,7 @@ public class SafeZone : MonoBehaviour
     IEnumerator CutsceneNoPlayer(float cutsceneTime)
     {
         cameraAtual.SetActive(false);
-        //fakePlayer.SetActive(false);
+        fakePlayer.SetActive(false);
         cameraCutscene.SetActive(true);
         player.GetComponent<CharacterController>().enabled = false;
         player.transform.position = teleportStart.transform.position;
@@ -71,6 +71,6 @@ public class SafeZone : MonoBehaviour
         cameraAtual.SetActive(true);
         cameraCutscene.SetActive(false);
         fakeBoss.SetBool("PlayerOff", false);
-        //fakePlayer.SetActive(true);
+        fakePlayer.SetActive(true);
     }
 }

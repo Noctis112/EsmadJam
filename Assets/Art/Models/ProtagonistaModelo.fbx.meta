@@ -3,7 +3,47 @@ guid: b24a4a74e19a1a641be2f260deccf693
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CaixaCastanha_MAT
+    second: {fileID: 2100000, guid: 001e5824f7c87e64b8d7dc47fee9e0f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CorPele2_MAT
+    second: {fileID: 2100000, guid: 10c3ca2b214f90a44acbeb42d10796a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapelBranco_MAT
+    second: {fileID: 2100000, guid: 4b9d5363f8dea55499445659a2ff8186, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoNormal_MAT
+    second: {fileID: 2100000, guid: 24861b2e0e27617478583792327f5c61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ProtagonistaCara_MAT
+    second: {fileID: 2100000, guid: 76c13fade4ef4944499f363750b8c5e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VermelhoNormal_MAT
+    second: {fileID: 2100000, guid: 84cab5c3bb986da4fa8a7c52ac896c4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d62f1a5c9d5e0224d8f8893d44086514, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ProtagonistaCara2
+    second: {fileID: 2800000, guid: 04e596105c34d5f4484422ed5e2da010, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
