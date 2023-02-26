@@ -61,6 +61,9 @@ public class FieldOfView : MonoBehaviour
     private void Update()
     {
         if (canSeePlayer)
+        {
             GameManager.playerLifes--;
+            //Cutscene
+        }
     }
 }
