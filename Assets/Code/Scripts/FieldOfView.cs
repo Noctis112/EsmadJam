@@ -23,7 +23,7 @@ public class FieldOfView : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject teleportStart;
     [SerializeField] Animator fakeBoss;
-
+    [SerializeField] GameObject safezone;
     private void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
@@ -70,9 +70,8 @@ public class FieldOfView : MonoBehaviour
 
     private void Update()
     {
-        if (canSeePlayer)
+        if (canSeePlayer && !safezone.GetComponent<SafeZone>().playerOn)
         {
-            Debug.Log("haha vi-te");
             GameManager.playerLifes--;
             StartCoroutine(CutscenePlayer(cutsceneTimer));
         }

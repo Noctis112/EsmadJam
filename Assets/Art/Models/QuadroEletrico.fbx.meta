@@ -3,7 +3,47 @@ guid: e2a059b30f0d2ba4bbe9a6b360fb4db1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cacifos_MAT
+    second: {fileID: 2100000, guid: a278a8070b096d94ca34ca14058810d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzaClaro_MAT
+    second: {fileID: 2100000, guid: 365119b27d7fca043a8642bbd57c0ed6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzentoCadeira_MAT
+    second: {fileID: 2100000, guid: 5d55f4aaf30f3f54e8986a4d5fb0f147, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MadeiraMesa_MAT
+    second: {fileID: 2100000, guid: 9cd4ee87dfc80864294c3d5a46d7fa15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PostItAMarelo_MAT
+    second: {fileID: 2100000, guid: f579d602e66df334d826ff9663b8dbf4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoNormal_MAT
+    second: {fileID: 2100000, guid: 9f1a082fa1b957a4caca9e321c072895, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VerdeDossie_MAT
+    second: {fileID: 2100000, guid: afbca20b0dd95bf4fbf9a389d429a56f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VermelhoNormal_MAT
+    second: {fileID: 2100000, guid: 520292cd84660df4ca5a59431af624eb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -6,9 +6,11 @@ public static class GameManager
 
     public static Mission[] missions = new Mission[]
     {
-        new Mission("Destruir 10 dossies", 10),
-        new Mission("Colocar virus em 5 computadores", 5),
-        new Mission("Matar o peixe do chefe", 1)
+        new Mission("No more paper stacks", 6),
+        new Mission("'Fix' co-workers computers", 7),
+        new Mission("Feed Memo (Boss's pet)", 1),
+        new Mission("Cut down on the light bill", 1),
+        new Mission("Leave Boss a scan at his door", 1)
     };
     public static bool[] missionComplete = new bool[missions.Length];
 

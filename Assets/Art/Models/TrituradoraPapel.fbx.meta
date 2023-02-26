@@ -3,7 +3,47 @@ guid: 14dab56ece53f554aa98b4464596fbd9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzaClaro_MAT
+    second: {fileID: 2100000, guid: 3051cb1b066873547a0c07f75b792df0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dentado_MAT
+    second: {fileID: 2100000, guid: 773db216798d95d4c82c939315abd061, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapelBranco_MAT
+    second: {fileID: 2100000, guid: 85cc4f1d13cf7e84a8ca0347775f79fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoBrilhante
+    second: {fileID: 2100000, guid: f5395d44b6f562f469d8c29f8558843b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoNormal_MAT
+    second: {fileID: 2100000, guid: 5ae4b92050419af40843658d51ef212c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TrituradoraIcon_MAT
+    second: {fileID: 2100000, guid: 04b2d517dfce2c44fa758c2c7efe27cc, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dentado
+    second: {fileID: 2800000, guid: f13f395971cf2c040aa4dd7ceec40391, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TrituradoraIcon
+    second: {fileID: 2800000, guid: 1a445b2972425ff4ea0bddbd31af8389, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,12 @@ guid: 67f23465ffb8930458b417af95977bc2
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MadeiraMesa_MAT
+    second: {fileID: 2100000, guid: 7ebed00781ba7b147bbf6358ed7d1f36, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

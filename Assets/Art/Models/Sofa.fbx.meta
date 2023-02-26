@@ -3,7 +3,17 @@ guid: 0ced3a631e75b2448a77ab79521f0a15
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AzulCadeira_MAT
+    second: {fileID: 2100000, guid: 95d92e823b056b644bad1508e6d6e339, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoBrilhante
+    second: {fileID: 2100000, guid: b9825de617d38594ca995e5e8fdc49cc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

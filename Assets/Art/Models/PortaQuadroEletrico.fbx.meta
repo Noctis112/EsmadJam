@@ -3,7 +3,27 @@ guid: 32d13eefd4eca1b45bf0974d1d7c5ff9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzentoCadeira_MAT
+    second: {fileID: 2100000, guid: 82b3b185a09c9d340b89e50ada00b7af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EletricoSinal_MAT
+    second: {fileID: 2100000, guid: 5fc53794449774545a3fde8556491787, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MadeiraMesa_MAT
+    second: {fileID: 2100000, guid: f1a3c82286ad5164c867be77f0e2f71d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SinalEletrico
+    second: {fileID: 2800000, guid: 1f32726d81d9c3a4d8803328b3bd8abe, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

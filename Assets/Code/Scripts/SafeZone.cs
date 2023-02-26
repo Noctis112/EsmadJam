@@ -5,7 +5,7 @@ using UnityEngine;
 public class SafeZone : MonoBehaviour
 {
 
-    bool playerOn = false;
+    public bool playerOn = false;
     bool bossOn = false;
 
     [SerializeField] float cutsceneTimer;

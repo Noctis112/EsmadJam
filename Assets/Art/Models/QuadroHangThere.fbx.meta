@@ -3,7 +3,22 @@ guid: cb768274a0b09584abed8f7449957d6c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CaixaCastanha_MAT
+    second: {fileID: 2100000, guid: 69558e591696b4a44b2dbeaa3c87343d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HangThere_Poster_MAT
+    second: {fileID: 2100000, guid: 8557984ba7ef06d49a9fab234fcf88aa, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: HangInThere_Poster
+    second: {fileID: 2800000, guid: 7c11e3ab06bf0344e80715f8e44495b7, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

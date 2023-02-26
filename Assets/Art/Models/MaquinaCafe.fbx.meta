@@ -3,7 +3,22 @@ guid: 13775af714b857f4a8db389b7eb2f460
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CinzaClaro_MAT
+    second: {fileID: 2100000, guid: aad95a5600ac40247a2acb98e5d7367f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapelBranco_MAT
+    second: {fileID: 2100000, guid: 05ac4b12dfb42b64bbbee2b5b926c1d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PretoBrilhante
+    second: {fileID: 2100000, guid: da4ed84c7a4f5584eb215bc9a6b5dd3e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

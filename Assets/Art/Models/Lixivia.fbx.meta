@@ -3,7 +3,27 @@ guid: 1c225e6e1c522874e8f083dd10b22404
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LixiviaIcon_MAT
+    second: {fileID: 2100000, guid: 042c8f33e5cb5844d82f86d3908ad3cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapelBranco_MAT
+    second: {fileID: 2100000, guid: 3a8b9b14f5bb09549b91f0468a35cc7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VermelhoTampinhas_MAT
+    second: {fileID: 2100000, guid: ef9fa9efcc83aa94186ca880c7412606, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LixiviaLogo
+    second: {fileID: 2800000, guid: 319de0dbc4548a146bf646713b4a2d76, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
