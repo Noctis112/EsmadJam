@@ -17,9 +17,12 @@ public class MissionUI : MonoBehaviour
         {
             if (!GameManager.missionComplete[i]) // exclude completed missions
             {
-                missionTextString += GameManager.missions[i].description +  "\n";
+                missionTextString += GameManager.missions[i].description + "\n";
             }
         }
         missionText.text = missionTextString;
     }
+
+
+
 }
